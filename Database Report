@@ -1,0 +1,91 @@
+#  Database Course Documentation
+
+## 1.  Comparison: Flat File Systems vs. Relational Databases
+
+| Feature         | Flat File Systems | Relational Databases |
+|----------------|-------------------|-----------------------|
+| **Structure** | Store data in plain text or CSV files where each record is usually independent and lacks a defined schema. [Elsasoft, 2020] | Organize data into structured tables with rows and columns. Each table has a defined schema and uses primary/foreign keys. [Codd, 1970; Wikipedia, 2024] |
+| **Data Redundancy** | High redundancy due to lack of normalization, causing inconsistency. | Uses normalization to reduce redundancy and ensure consistency. |
+| **Relationships** | No inherent support for relationships; must be handled manually. | Supports one-to-one, one-to-many, many-to-many using foreign keys. |
+| **Example Usage** | Small-scale apps: contact lists, config files, CSVs. | Enterprise systems: ERPs, CRMs, inventory, banking. |
+| **Drawbacks** | No access control, no query language, hard to scale. | Requires design expertise, higher resource needs, less suited for unstructured data. |
+
+
+
+## 2.  DBMS Advantages
+
+
+
+
+## 3. Roles in a Database System
+
+1. **System Analyst**  
+   Defines system requirements and aligns business needs with database solutions.
+
+2. **Database Designer**  
+   Designs schema, relationships, normalization, indexing, constraints.
+
+3. **Database Developer**  
+   Implements DB structures in SQL, creates procedures, triggers, tests and optimizes code.
+
+4. **Database Administrator (DBA)**  
+   Installs, configures, monitors DBMS, handles backups, security, tuning.
+
+5. **Application Developer**  
+   Connects the database to the application, builds logic to interact with it.
+
+6. **BI Developer / Analyst**  
+   Builds dashboards, queries, reports; analyzes data and ensures quality.
+
+
+
+## 4. Types of Databases
+
+### Relational Databases (RDBMS)
+- Stores data in structured tables.
+- Supports ACID transactions.
+- Examples: MySQL, PostgreSQL, Oracle.
+
+###  Non-Relational (NoSQL) Databases
+- Schema-less, flexible models.
+- Types: Key-Value, Document, Column-Family, Graph.
+- Used in big data, real-time applications.
+
+###  Hierarchical Databases
+- Tree structure (parent-child), e.g., IBM IMS.
+
+###  Network Databases
+- Supports many-to-many relationships.
+
+###  Object-Oriented Databases
+- Stores data as objects with methods and attributes. Used in multimedia, CAD.
+
+###  Cloud Databases
+- Hosted on platforms like AWS, Azure, Google Cloud.
+- Managed services (DBaaS), scalable and available.
+
+###  Multi-Model Databases
+- Support multiple models (relational + NoSQL) in one system.
+
+
+## 5.  Cloud Storage & Databases
+
+###  What is Cloud Storage?
+- Remotely hosted storage accessible via the internet.
+- Provides redundancy, scalability, and low-maintenance.
+
+###  Cloud Databases (DBaaS)
+- Databases hosted and managed in the cloud.
+- Examples: Amazon RDS, Azure SQL, Google Cloud Spanner.
+
+### Advantages
+- **Scalability & Elasticity**: Auto-scaling with demand.
+- **High Availability**: Replication and failover.
+- **Lower Maintenance**: Backups, patches automated.
+- **Cost Efficiency**: Pay-as-you-go model.
+
+###  Challenges
+- **Security & Privacy**: Risk of data breaches.
+- **Latency**: Performance depends on network.
+- **Vendor Lock-In**: Difficult to migrate.
+- **High Cost for Large Loads**: Can be expensive in some cases.
